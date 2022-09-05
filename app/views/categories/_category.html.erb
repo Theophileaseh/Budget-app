@@ -1,17 +1,18 @@
 <div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
+<div class="single-category">
+<div class="category-image-name">
+<div class="category-image">
+  <img src=<%= category.icon %> alt="#{category.name}" class="s-image">
+</div>
+<div class="category-name-counter">
+  <p class="category-name">
     <%= category.name %>
   </p>
 
-  <p>
-    <strong>Icon:</strong>
-    <%= category.icon %>
+  <p  class="category-transactions-no"> Number of transactions:
+    <span><%= category.transactions_counter %></span>
   </p>
-
-  <p>
-    <strong>Transactions counter:</strong>
-    <%= category.transactions_counter %>
-  </p>
+</div>
+</div>
 
 </div>

@@ -11,17 +11,15 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class="form-section">
+    <%= form.text_field :name, placeholder: "Name" %>
+  </div>
+
+  <div  class="form-section">
+    <%= form.text_field :photo, placeholder: "Link to user photo" %>
   </div>
 
   <div>
-    <%= form.label :photo, style: "display: block" %>
-    <%= form.text_field :photo %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit class: "submit-btn" %>
   </div>
 <% end %>

@@ -1,10 +1,28 @@
+<div class="transactions-page">
+<div class="transactions-header">
+<div class="navigation-icon">
+  <%= link_to categories_path do %>
+    <p>≪</p>
+  <% end %>
+</div>
+<div class="current-section-heading">TRANSACTIONS</div>
+<div></div>
+</div>
 <p style="color: green"><%= notice %></p>
-
+<div class="category-section">
 <%= render @category %>
+<p class="total-sum-transactions">Transactions Sum: <span><%= @total_transactions %></span></p>
+</div>
+</div>
+<div class="transaction-list">
+</div>
 
-<div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
+<div class="transaction-page-btns">
+
   <%= link_to "Back to categories", categories_path %>
 
+  <%= link_to "Add New Transaction", "/categories/#{@category.id}/transactions/new" %>
+
   <%= button_to "Destroy this category", @category, method: :delete %>
+</div>
 </div>

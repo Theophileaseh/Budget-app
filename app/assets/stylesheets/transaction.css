@@ -1,0 +1,36 @@
+.transactions-page .category-section {
+  border-bottom: 5px solid #336daf;
+  background: #fff;
+}
+
+.transactions-header {
+  background: #336daf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.navigation-icon a {
+  text-decoration: none;
+}
+
+.navigation-icon p {
+  color: #fff;
+  font-size: 30px;
+  margin: 5px 40px;
+
+}
+
+.current-section-heading {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.total-sum-transactions {
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  color: grey;
+  margin-top: -20px;
+}

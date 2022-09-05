@@ -4,6 +4,7 @@ class CreateCategories < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :icon
       t.integer :transactions_counter
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end

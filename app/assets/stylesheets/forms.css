@@ -1,0 +1,54 @@
+.budget-app-form {
+  background: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 30px 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+.budget-app-form h1, .budget-app-form h2 {
+  text-align: center;
+  color: #336daf;
+}
+
+.budget-app-form .form-section, .budget-app-form .field {
+  margin-bottom: 10px;
+}
+
+.budget-app-form input {
+  border: none;
+  border-bottom: 2px solid grey;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+
+.budget-app-form input:focus {
+  outline: none;
+  border-bottom: 2px solid #336daf;
+}
+
+.budget-app-form .submit-btn {
+  color: #fff;
+  background: #336daf;
+  width: max-content;
+  padding: 7px 12px;
+  border-radius: 5px;
+  display: flex;
+  margin: 18px auto;
+  border: none;
+}
+
+#user_remember_me {
+  width: 15px;
+}
+
+.user-option-links {
+  display: flex;
+  gap: 10px;
+}
+
+.user-option-links a {
+  color: #336daf;
+}
