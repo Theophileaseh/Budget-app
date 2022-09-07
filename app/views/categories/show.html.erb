@@ -43,8 +43,6 @@
   <th>Transaction</th>
   <th>Amount</th>
 </tr>
-
-
         <% @category.transactions.order('created_at DESC').each do |transaction| %>
           <tr class="transaction-table-data">
           <td><%= transaction.name %></td>
