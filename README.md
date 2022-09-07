@@ -1,24 +1,72 @@
-# README
+# Budget App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> An application built using Ruby on Rails to manage the expenses of any user. It allows the user the create categories under which are various transactions for the category. 
 
-Things you may want to cover:
+## Screenshot
+| Categories Page |   Transactions page |
+| ---------- | ----------- |
+ | ![CategoriesPage](img/1.png) | ![TransactionsPage](img/2.png) |
+</p>
 
-* Ruby version
 
-* System dependencies
+## Built With
 
-* Configuration
+- Ruby on Rails
+- Ruby
+- Rubocop
 
-* Database creation
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-* Database initialization
+### Prerequisites
 
-* How to run the test suite
+``VS Code or other Code Editor``
 
-* Services (job queues, cache servers, search engines, etc.)
+### Setup
 
-* Deployment instructions
+``Install Postgres and Ruby applications``
 
-* ...
+### Install
+
+    git clone https://github.com/Theophileaseh/Budget-app.git
+
+### Usage
+
+``cd Budget-app``
+
+``bundle install``
+
+``Run "rails server or rails s" to start the application on local server``
+
+### Run tests
+
+``Run "rspec" in your terminal``
+
+
+## Authors
+
+👤 **Nwachan Theophile**
+
+- GitHub: [@Theophileash](https://github.com/Theophileaseh)
+- Twitter: [@NwachanT](https://twitter.com/NwachanT)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/nwachan-theophile)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
