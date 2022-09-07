@@ -19,7 +19,6 @@
   color: #fff;
   font-size: 30px;
   margin: 5px 40px;
-
 }
 
 .current-section-heading {
@@ -48,7 +47,7 @@
   width: 70%;
   margin: 0 auto;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   border-radius: 5px;
 }
 
@@ -89,7 +88,6 @@
 .transaction-page-btns {
   justify-content: flex-start !important;
 }
-
 
 @media screen and (max-width: 768px) {
   .transaction-table {

@@ -1,6 +1,7 @@
 #categories a {
   text-decoration: none;
 }
+
 .single-category {
   background: #fff;
   padding: 20px;
@@ -10,7 +11,7 @@
 
 .category-image-name {
   display: flex;
-    gap: 40px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -27,6 +28,7 @@
 .category-transactions-no {
   display: flex;
   justify-content: flex-end;
+  font-size: 13px;
 }
 
 .category-name-counter {
@@ -35,10 +37,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.category-transactions-no {
-  font-size: 13px;
 }
 
 .add-new-category {
