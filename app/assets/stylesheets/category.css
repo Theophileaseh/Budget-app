@@ -32,6 +32,9 @@
 .category-name-counter {
   width: 100%;
   color: #696565;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .category-transactions-no {
@@ -49,4 +52,26 @@
   background: #fff;
   padding: 6px 10px;
   border-radius: 5px;
+  text-decoration: none;
+  color: #336daf;
+}
+
+.category-transactions-no span {
+  color: #336daf;
+}
+
+.remove-btn {
+  border: none;
+  background: #336daf;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+.remove-btn-section {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  margin-top: -80px;
+  margin-bottom: 50px;
 }

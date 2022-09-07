@@ -4,9 +4,6 @@ class TransactionsController < ApplicationController
   # GET /transactions or /transactions.json
   def index
     @transactions = Transaction.all
-    @transactions.user = current_user
-    @category = Category.includes(:user).where(id: params[:id])
-    @total_transactions = transactions.where(user_by_id: current_user.id).sum(:amount)
   end
 
   # GET /transactions/1 or /transactions/1.json
@@ -15,6 +12,7 @@ class TransactionsController < ApplicationController
 
   # GET /transactions/new
   def new
+    @transaction = Transaction.new
     @category = Category.find(params[:category_id])
   end
 
@@ -24,13 +22,12 @@ class TransactionsController < ApplicationController
 
   # POST /transactions or /transactions.json
   def create
+    @category = Category.find(params[:category_id])
     @transaction = Transaction.new(transaction_params)
-    @transaction.user = current_user
 
     respond_to do |format|
       if @transaction.save
-        puts category_id
-        format.html { redirect_to category_path(transaction_params[:category_id]), notice: "Transaction was successfully created." }
+        format.html { redirect_to "/categories/#{@category.id}", notice: "Transaction was successfully created." }
         format.json { render :show, status: :created, location: @transaction }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -43,7 +40,7 @@ class TransactionsController < ApplicationController
   def update
     respond_to do |format|
       if @transaction.update(transaction_params)
-        format.html { redirect_to category_path(transaction_params[:category_id]), notice: "Transaction was successfully updated." }
+        format.html { redirect_to transaction_url(@transaction), notice: "Transaction was successfully updated." }
         format.json { render :show, status: :ok, location: @transaction }
       else
         format.html { render :edit, status: :unprocessable_entity }

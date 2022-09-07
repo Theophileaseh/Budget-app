@@ -31,11 +31,28 @@
     background: #336daf;
     align-items: center;
     justify-content: space-between;
-  padding: 7px 25px;
+  padding: 7px 45px;
 }
 
 .application-main-info img {
   width: 200px;
+}
+
+
+.application-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-image-login .user-image {
+  width: 40px;
+  border-radius: 100%;
+}
+
+.user-image-login {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .nav-login {

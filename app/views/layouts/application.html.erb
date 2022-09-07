@@ -24,7 +24,7 @@
 <div class="application-user-info">
       <% if user_signed_in? %>
       <div class="user-edit-password">
-        <div><p>Welcome <span><%= current_user.name %></span></p><img src=<%= current_user.photo %>, alt=<%= current_user.name %> > </div>
+        <div class="user-image-login"><p>Welcome <span><%= current_user.name %></span></p><img src=<%= current_user.photo %> alt=<%= current_user.name %> class= "user-image" > </div>
       </div>
       <div>
       <%= button_to "Logout", destroy_user_session_path, method: :delete, data: { turbo: false }, class: "nav-login" %>

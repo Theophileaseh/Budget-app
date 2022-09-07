@@ -38,6 +38,7 @@
   display: flex;
   margin: 18px auto;
   border: none;
+  cursor: pointer;
 }
 
 #user_remember_me {
@@ -49,6 +50,12 @@
   gap: 10px;
 }
 
-.user-option-links a {
+.user-option-links a, .budget-app-form a {
   color: #336daf;
+}
+
+@media screen and (max-width: 768px) {
+  .budget-app-form {
+    width: 70%;
+  }
 }

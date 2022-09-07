@@ -8,10 +8,13 @@
   <p class="category-name">
     <%= category.name %>
   </p>
-
-  <p  class="category-transactions-no"> Number of transactions:
-    <span><%= category.transactions_counter %></span>
+  
+  <div class="category-remove-counter">
+  <p  class="category-transactions-no"> Number of transactions:&nbsp;
+    <span><%= category.transactions.size %></span>
   </p>
+
+  </div>
 </div>
 </div>
 

@@ -1,13 +1,19 @@
 <div class="categories-page">
 <p style="color: green"><%= notice %></p>
-
+<% if @categories.length === 0 %>
+  <h1 class="budget-welcome">Welcome to <span>Budget</span>. You have no categories!</h1>
+<% else %>
 <h1 class="budget-welcome">Welcome to <span>Budget</span>. Here is a list of your categories.</h1>
+<% end %>
 
 <div id="categories">
   <% @categories.each do |category| %>
     <%= link_to category do %>
     <%= render category %>
     <% end %>
+    <div class="remove-btn-section">
+    <%= button_to "Remove", category, method: :delete, data: {confirm: "Are you sure?"}, class: "remove-btn" %>
+    </div>
   <% end %>
 </div>
 

@@ -1,12 +1,26 @@
-<%= form_with model: @transaction,  url: "/categories/#{@category.id}/transactions", local: true do |form| %>
+<%= form_with(model: transaction, url: category_transactions_path) do |form| %>
+  <% if transaction.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
 
+      <ul>
+        <% transaction.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-  <div class="form-section">
+  <div>
     <%= form.text_field :name, placeholder: "Name" %>
   </div>
 
-  <div class="form-section">
+  <div>
     <%= form.number_field :amount, placeholder: "Amount in $" %>
+  </div>
+
+  <div>
+    <%= form.hidden_field :category_id, value: @category.id %>
   </div>
 
   <div>
