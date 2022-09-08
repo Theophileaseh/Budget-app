@@ -1,6 +1,8 @@
 # Budget App
 
-> An application built using Ruby on Rails to manage the expenses of any user. It allows the user the create categories under which are various transactions for the category. 
+> An application built using Ruby on Rails to manage the expenses of any user. It allows the user the create categories under which are various transactions for the category.
+
+## [Visit Budget App](https://budgetz-app.herokuapp.com/)
 
 [Video link](https://www.loom.com/share/436983f6d98b4e68a5e0f5367744e4b5)
 ## Screenshot
@@ -64,9 +66,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- credits to Gregoire Vella on Behance. :raised_hands:
 
 ## 📝 License
 
