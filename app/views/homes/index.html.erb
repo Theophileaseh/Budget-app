@@ -1,0 +1,14 @@
+<div class="home-page">
+  <div class="welcome-section">
+    <h1 class="welcome-text">Welcome To</h1>
+    <%= image_tag "budget-app.png", alt: "Buget App", class: "welcome-image" %>
+  </div>
+  <div class="login-register-btns">
+  <%= link_to "Log in", new_user_session_path, class: "welcome-btns" %>
+  <%= link_to "Sign Up", new_user_registration_path, class: "welcome-btns welcome-signup" %>
+  </div>
+
+  <div class="home-footer">
+    <p>Enjoy the best from budget</p>
+  </div>
+</div>

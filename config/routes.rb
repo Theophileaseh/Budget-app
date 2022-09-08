@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  resources :homes
  
   devise_for :users
 
-  root "categories#index"
+  root "homes#index"
 
   resources :users, only: %i[index]
   resources :categories, only: %i[index show new create destroy] do

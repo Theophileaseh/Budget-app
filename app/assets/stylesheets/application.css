@@ -60,6 +60,7 @@ body {
   background: #fff;
   padding: 7px 11px;
   border-radius: 3px;
+  text-decoration: none;
 }
 
 .budget-welcome {
@@ -76,4 +77,68 @@ body {
 
 .user-edit-password {
   color: #fff;
+}
+
+
+.home-page {
+  background: #671973;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+
+}
+
+.welcome-section {
+  padding-top: 80px;
+}
+
+.welcome-text {
+  font-size: 40px;
+  font-family: cursive;
+  margin: 0 auto;
+}
+
+.welcome-image {
+
+  width: 400px;
+
+}
+
+.welcome-btns {
+  background: #fff;
+  color: #671973;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: cursive;
+  width: max-content;
+  padding: 7px 25px;
+  border-radius: 25px;
+}
+
+.welcome-signup {
+  background: #336daf;
+  color: #fff;
+}
+
+.login-register-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px;
+}
+
+.home-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #336daf;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
 }
