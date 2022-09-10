@@ -92,14 +92,15 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   
-  config.action_mailer.default_url_options = {:host => 'localhost:8080'}
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-   :address              => "smtp.gmail.com",
-   :port                 => 587,
-   :user_name            => "ntikhub@gmail.com",
-   :password             => "&3tEPe^kn",
-   :authentication       => "plain",
-  :enable_starttls_auto => true
+  ActionMailer::Base.default_charset = "utf-8"
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+  :address => "smtp.bizmail.yahoo.com",
+  :port => 587,
+  :domain => "budgetz-app.herokuapp.com",
+  :user_name => "theophile_nwachan@yahoo.com",
+  :password => "4@fdd%s!8d%s" ,
+  :enable_starttls_auto => true,
+  :authentication => :plain
   }
 end
