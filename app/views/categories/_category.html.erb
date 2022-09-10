@@ -1,0 +1,21 @@
+<div id="<%= dom_id category %>">
+<div class="single-category">
+<div class="category-image-name">
+<div class="category-image">
+  <img src=<%= category.icon %> alt="#{category.name}" class="s-image">
+</div>
+<div class="category-name-counter">
+  <p class="category-name">
+    <%= category.name %>
+  </p>
+  
+  <div class="category-remove-counter">
+  <p  class="category-transactions-no"> Number of transactions:&nbsp;
+    <span><%= category.transactions.size %></span>
+  </p>
+
+  </div>
+</div>
+</div>
+
+</div>

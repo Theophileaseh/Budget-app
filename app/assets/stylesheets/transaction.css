@@ -1,0 +1,100 @@
+.transactions-page .category-section {
+  border-bottom: 5px solid #336daf;
+  background: #fff;
+}
+
+.transactions-header {
+  background: #336daf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.navigation-icon a {
+  text-decoration: none;
+}
+
+.navigation-icon p {
+  color: #fff;
+  font-size: 30px;
+  margin: 5px 40px;
+}
+
+.current-section-heading {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.total-sum-transactions {
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  color: grey;
+  margin-top: -20px;
+}
+
+.total-sum-transactions span {
+  color: #336daf;
+}
+
+.transaction-list {
+  background: #fff;
+  padding: 30px 0;
+}
+
+.transaction-table {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  border-radius: 5px;
+}
+
+.transaction-table-head {
+  background: #336daf;
+  color: #fff;
+  font-size: 23px;
+  height: 60px;
+}
+
+.transaction-table-data {
+  background: #b4c4d6;
+  color: #fff;
+  font-size: 18px;
+  height: 30px;
+}
+
+.transaction-table-data:nth-child(even) {
+  background: #fff;
+  color: #4d4d4d;
+}
+
+.add-new-transaction {
+  display: flex;
+  justify-content: end;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.add-transaction-btn {
+  background: #336daf;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+.transaction-page-btns {
+  justify-content: flex-start !important;
+}
+
+@media screen and (max-width: 768px) {
+  .transaction-table {
+    width: 90%;
+  }
+
+  .add-new-transaction {
+    width: 90%;
+  }
+}

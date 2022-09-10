@@ -1,0 +1,11 @@
+<div class="budget-app-form">
+<h1>New transaction</h1>
+
+<%= render "form", transaction: @transaction %>
+
+<br>
+
+<div>
+  <%= link_to "Back to transactions", "/categories/#{@category.id}" %>
+</div>
+</div>

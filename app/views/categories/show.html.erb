@@ -1,0 +1,63 @@
+<div class="transactions-page">
+<div class="transactions-header">
+<div class="navigation-icon">
+  <%= link_to categories_path do %>
+    <p>≪</p>
+  <% end %>
+</div>
+<div class="current-section-heading">TRANSACTIONS</div>
+<div></div>
+</div>
+<p style="color: green"><%= notice %></p>
+<div class="category-section">
+<div id="<%= dom_id @category %>">
+<div class="single-category">
+<div class="category-image-name">
+<div class="category-image">
+  <img src=<%= @category.icon %> alt="#{@category.name}" class="s-image">
+</div>
+<div class="category-name-counter">
+  <p class="category-name">
+    <%= @category.name %>
+  </p>
+  
+  <p  class="category-transactions-no"> Number of transactions:&nbsp;
+    <span><%= @category.transactions.size %></span>
+  </p>
+</div>
+</div>
+
+</div>
+<p class="total-sum-transactions">Transactions Sum: <span><%=@category.transactions.sum(:amount) %> $</span></p>
+</div>
+</div>
+<div class="transaction-list">
+<div class="add-new-transaction">
+<%= link_to "Add New Transaction", "/categories/#{@category.id}/transactions/new", class: "add-transaction-btn" %>
+</div>
+<% if @category.transactions.length == 0 %>
+  <h1 class="budget-welcome">No Transactions Available</h1>
+<% else %>
+<table class="transaction-table">
+<tr class="transaction-table-head">
+  <th>Transaction</th>
+  <th>Amount</th>
+</tr>
+        <% @category.transactions.order('created_at DESC').each do |transaction| %>
+          <tr class="transaction-table-data">
+          <td><%= transaction.name %></td>
+          <td><%= transaction.amount %></td>
+        </tr>
+        <% end %>
+
+        </table>
+  <% end %>
+      
+</div>
+
+<div class="transaction-page-btns add-new-category">
+
+  <%= link_to "Back", categories_path, class: "add-new-category-btn" %>
+
+</div>
+</div>
