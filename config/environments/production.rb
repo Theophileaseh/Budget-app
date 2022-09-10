@@ -99,7 +99,7 @@ Rails.application.configure do
     :address => 'smtp-relay.sendinblue.com',
     :port => 587,
     :user_name => 'theophilenwachan@gmail.com',
-    :password => 'h67D!$gg0',
+    :password => 'jZkqFU7d0SR54Wb3',
     :authentication => 'login',
     :enable_starttls_auto => true
   }
