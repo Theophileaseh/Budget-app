@@ -92,15 +92,16 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   
-  ActionMailer::Base.default_charset = "utf-8"
-  ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = {
-  :address => "smtp.bizmail.yahoo.com",
-  :port => 587,
-  :domain => "budgetz-app.herokuapp.com",
-  :user_name => "theophile_nwachan@yahoo.com",
-  :password => "4@fdd%s!8d%s" ,
-  :enable_starttls_auto => true,
-  :authentication => :plain
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => ‘smtp-relay.sendinblue.com’,
+    :port => 587,
+    :user_name => ‘theophilenwachan@gmail.com’,
+    :password => ‘h67D!$gg0’,
+    :authentication => ‘login’,
+    :enable_starttls_auto => true
   }
+
 end
