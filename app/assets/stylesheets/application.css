@@ -79,7 +79,6 @@ body {
   color: #fff;
 }
 
-
 .home-page {
   background: #671973;
   color: #fff;
@@ -87,7 +86,6 @@ body {
   height: 100vh;
   position: fixed;
   width: 100%;
-
 }
 
 .welcome-section {
@@ -101,9 +99,7 @@ body {
 }
 
 .welcome-image {
-
   width: 400px;
-
 }
 
 .welcome-btns {
