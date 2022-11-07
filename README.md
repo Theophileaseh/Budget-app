@@ -4,7 +4,6 @@
 
 ## [Visit Budget App](https://budgetz-app.herokuapp.com/)
 
-[Video link](https://www.loom.com/share/436983f6d98b4e68a5e0f5367744e4b5)
 ## Screenshot
 | Categories Page |   Transactions page |
 | ---------- | ----------- |
